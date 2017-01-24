@@ -14,7 +14,7 @@
 "
 "       Install the awesome version from:
 "
-"           https://github.com/amix/vimrc
+"           https://github.com/LearnerWu/vimrc
 "
 " Syntax_highlighted:
 "       http://amix.dk/vim/vimrc.html
@@ -43,6 +43,10 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
+" enable line number
+:set number
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -193,8 +197,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
